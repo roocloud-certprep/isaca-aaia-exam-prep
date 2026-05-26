@@ -35,6 +35,14 @@ Watch the full series on the **[RooCloud YouTube channel](https://youtube.com/@r
 
 The exam is organised into three domains: **AI Governance and Risk** (Episodes 1–17), **AI Operations** (Episodes 18–37), and **Auditing AI** (Episodes 38–55).
 
+<div class="cta" markdown="1">
+
+### 📝 Notes + videos are only half the prep
+
+The written notes and video lessons in this guide are designed to be used **alongside practice**. Reinforce every chapter with **chapter-wise MCQs** and **full-length mock exams** at **[RooCloud.com](https://roocloud.com)** — read or watch the lesson here, then test your recall and exam-readiness there.
+
+</div>
+
 ## Domain 1: AI Governance and Risk
 
 * [Episode 1: Types of AI Explained: Reactive, Limited Memory, ANI, AGI, ASI](./domain-1-ai-governance-and-risk/ep01-types-of-ai-explained.html)
@@ -101,4 +109,4 @@ The exam is organised into three domains: **AI Governance and Risk** (Episodes 1
 
 ---
 
-*This study guide is produced by [RooCloud](https://roocloud.com). Watch the full series on [YouTube](https://youtube.com/@roocloud) and practice with MCQs and mock exams at [RooCloud.com](https://roocloud.com).*
+*This study guide is produced by [RooCloud](https://roocloud.com). Watch the full series on [YouTube](https://youtube.com/@roocloud), browse all courses at [RooCloud @ GitHub](https://roocloud-certprep.github.io/), and practice with chapter-wise MCQs and full-length mock exams at [RooCloud.com](https://roocloud.com).*

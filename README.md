@@ -20,6 +20,14 @@ The AAIA exam is organised into three domains:
 2. **AI Operations** — Episodes 18–37
 3. **Auditing AI** — Episodes 38–55
 
+<div class="cta" markdown="1">
+
+### 📝 Notes + videos are only half the prep
+
+The written notes and video lessons in this guide are designed to be used **alongside practice**. Reinforce every chapter with **chapter-wise MCQs** and **full-length mock exams** at **[RooCloud.com](https://roocloud.com)** — read or watch the lesson here, then test your recall and exam-readiness there.
+
+</div>
+
 ## Table of Contents
 
 ### Domain 1: AI Governance and Risk
@@ -88,4 +96,4 @@ The AAIA exam is organised into three domains:
 
 ---
 
-*This study guide is produced by [RooCloud](https://roocloud.com). Watch the full series on [YouTube](https://youtube.com/@roocloud) and practice with MCQs and mock exams at [RooCloud.com](https://roocloud.com).*
+*This study guide is produced by [RooCloud](https://roocloud.com). Watch the full series on [YouTube](https://youtube.com/@roocloud), browse all courses at [RooCloud @ GitHub](https://roocloud-certprep.github.io/), and practice with chapter-wise MCQs and full-length mock exams at [RooCloud.com](https://roocloud.com).*
