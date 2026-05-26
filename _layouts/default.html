@@ -41,8 +41,8 @@
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a href="{{ '/' | relative_url }}" aria-label="RooCloud Exam Prep home">
-        <img src="https://roocloud.com/RooCloud.com-Exam-Prep.png" alt="RooCloud Exam Prep" width="190" height="25" class="site-logo">
+      <a href="https://roocloud-certprep.github.io/" aria-label="RooCloud Exam Prep home">
+        <img src="{{ '/assets/img/RooCloud.com-Exam-Prep.png' | relative_url }}" alt="RooCloud Exam Prep" width="190" height="25" class="site-logo">
       </a>
     </div>
   </header>
@@ -50,6 +50,7 @@
     {{ content }}
     <footer class="site-footer">
       <p>&copy; {{ 'now' | date: "%Y" }} RooCloud &middot;
+        <a href="https://roocloud-certprep.github.io/">Home</a> &middot;
         <a href="{{ site.youtube }}">YouTube</a> &middot;
         <a href="{{ site.website }}">RooCloud.com</a> &middot;
         <a href="{{ '/' | relative_url }}">Exam Syllabus</a>
