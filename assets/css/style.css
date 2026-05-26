@@ -1,12 +1,50 @@
+/* ===== RooCloud Exam Prep — Sintony brand font (from roocloud.com) ===== */
+/* latin-ext */
+@font-face {
+  font-family: 'Sintony';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://roocloud.com/XoHm2YDqR7-98cVUET0tuu8o.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Sintony';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://roocloud.com/XoHm2YDqR7-98cVUETMtug.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Sintony';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://roocloud.com/XoHj2YDqR7-98cVUGYgIr94JkwLp.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Sintony';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://roocloud.com/XoHj2YDqR7-98cVUGYgIr9AJkw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
   --bg: #ffffff;
-  --text: #1a1a2e;
+  --text: #212529;
   --muted: #5b6472;
-  --brand: #2b6cb0;
-  --brand-dark: #1e4e8c;
-  --accent: #e8512f;
+  --brand: #6666cc;
+  --brand-link: #4a4ab8;
+  --brand-dark: #3f3f9e;
   --border: #e4e8ee;
-  --code-bg: #f5f7fa;
+  --code-bg: #f4f4fb;
   --max: 820px;
 }
 
@@ -16,23 +54,30 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.7;
+  font-family: 'Sintony', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 1.75;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
 }
 
-.container {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 32px 20px 64px;
+/* Site header with logo */
+.site-header { border-bottom: 1px solid var(--border); background: #fff; }
+.header-inner { max-width: var(--max); margin: 0 auto; padding: 16px 20px; display: flex; align-items: center; }
+.site-logo { display: block; height: 26px; width: auto; }
+
+.container { max-width: var(--max); margin: 0 auto; padding: 28px 20px 64px; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--brand);
+  font-weight: 700;
+  font-family: 'Sintony', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
+h1 { font-size: 2.05rem; line-height: 1.25; margin: 0.4em 0 0.5em; letter-spacing: -0.01em; }
+h2 { font-size: 1.5rem; margin: 1.6em 0 0.5em; border-bottom: 2px solid var(--border); padding-bottom: 0.25em; }
+h3 { font-size: 1.2rem; margin: 1.3em 0 0.4em; }
 
-h1 { font-size: 2.05rem; line-height: 1.25; margin: 0.4em 0 0.5em; font-weight: 800; letter-spacing: -0.01em; }
-h2 { font-size: 1.5rem; margin: 1.6em 0 0.5em; font-weight: 700; border-bottom: 2px solid var(--border); padding-bottom: 0.25em; }
-h3 { font-size: 1.2rem; margin: 1.3em 0 0.4em; font-weight: 700; }
-
-a { color: var(--brand); text-decoration: none; }
+a { color: var(--brand-link); text-decoration: none; }
 a:hover { color: var(--brand-dark); text-decoration: underline; }
 
 p, li { color: var(--text); }
@@ -52,14 +97,8 @@ blockquote {
   border-radius: 0 6px 6px 0;
 }
 
-code {
-  background: var(--code-bg);
-  padding: 0.12em 0.4em;
-  border-radius: 4px;
-  font-size: 0.9em;
-}
+code { background: var(--code-bg); padding: 0.12em 0.4em; border-radius: 4px; font-size: 0.9em; }
 
-/* Top navigation bar (the emoji link row at top of each page) */
 .container > p:first-of-type a { font-weight: 600; }
 
 /* Responsive 16:9 video embed */
@@ -70,53 +109,40 @@ code {
   margin: 1.5em 0 2em;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 6px 24px rgba(20, 40, 80, 0.16);
+  box-shadow: 0 6px 24px rgba(40, 40, 90, 0.16);
   background: #000;
 }
-.video-embed iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  border: 0;
-}
+.video-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
-/* Key takeaways / callout boxes */
+/* Key takeaways callout — soft pastel lavender */
 .takeaways {
-  background: #f0f6ff;
-  border: 1px solid #cfe0f7;
+  background: #f2f2fe;
+  border: 1px solid #d8d8f4;
   border-radius: 10px;
   padding: 0.6em 1.4em;
   margin: 1.8em 0;
 }
-.takeaways h2 { border: 0; margin-top: 0.5em; }
+.takeaways h2 { border: 0; margin-top: 0.5em; color: var(--brand); }
 
-/* CTA block */
+/* CTA block — pastel, high-contrast (replaces old dark-blue) */
 .cta {
-  background: linear-gradient(135deg, #2b6cb0, #1e4e8c);
-  color: #fff;
+  background: linear-gradient(135deg, #eef0ff 0%, #e9f1fb 100%);
+  color: #23234d;
+  border: 1px solid #cdd3f5;
   border-radius: 12px;
-  padding: 1.4em 1.6em;
+  padding: 1.3em 1.6em;
   margin: 2.4em 0 1.2em;
 }
-.cta h2 { color: #fff; border: 0; margin-top: 0.2em; }
-.cta a { color: #ffd9cc; font-weight: 700; }
+.cta h2, .cta h3 { color: #4a45c2; border: 0; margin-top: 0.2em; }
+.cta a { color: #3a36b3; font-weight: 700; text-decoration: underline; }
+.cta a:hover { color: #2a2790; }
 
-/* Index / homepage episode tables */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 1.2em 0;
-  font-size: 0.97rem;
-}
+/* Tables */
+table { border-collapse: collapse; width: 100%; margin: 1.2em 0; font-size: 0.97rem; }
 th, td { text-align: left; padding: 0.6em 0.7em; border-bottom: 1px solid var(--border); }
 th { background: var(--code-bg); font-weight: 700; }
 
-.domain-card {
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 0.4em 1.4em 1em;
-  margin: 1.4em 0;
-}
+.domain-card { border: 1px solid var(--border); border-radius: 12px; padding: 0.4em 1.4em 1em; margin: 1.4em 0; }
 
 .site-footer {
   margin-top: 3.5em;
@@ -132,4 +158,5 @@ th { background: var(--code-bg); font-weight: 700; }
   body { font-size: 16px; }
   h1 { font-size: 1.6rem; }
   .container { padding: 20px 16px 48px; }
+  .header-inner { padding: 12px 16px; }
 }
