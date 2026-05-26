@@ -1,0 +1,54 @@
+# ============================================================
+#  ISACA AAIA Certification Prep — Jekyll / GitHub Pages config
+# ============================================================
+# After you create the GitHub repo, set `url` to your Pages URL
+# and `baseurl` to "/<repo-name>" (or "" if using a custom domain
+# or a <username>.github.io repo).
+
+title: "ISACA AAIA Exam Prep"
+tagline: "Advanced in AI Audit (AAIA) Certification Study Guide"
+description: >-
+  Free, comprehensive study notes and video lessons for the ISACA Advanced in
+  AI Audit (AAIA) certification. 55 episodes covering AI Governance & Risk,
+  AI Operations, and Auditing AI — by RooCloud.
+author: "RooCloud"
+lang: en_US
+
+# --- Repository: roocloud-certprep/isaca-aaia-exam-prep ---
+url: "https://roocloud-certprep.github.io"
+baseurl: "/isaca-aaia-exam-prep"
+
+# Social / branding
+youtube: "https://youtube.com/@roocloud"
+website: "https://roocloud.com"
+logo: "/assets/logo.png"
+twitter_card_type: summary_large_image
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# GitHub Pages safe plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude source/working files from the build
+exclude:
+  - README-build-notes.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - "*.veg"
+  - "*.srt"
+  - "*.mp4"
+
+# Default front-matter applied to every page
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
